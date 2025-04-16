@@ -1,29 +1,48 @@
-# Black-Friday-Purchase-Prediction
+# Black-Friday-Purchase-Prediction 
 
+### Overview
+This project aims to predict whether a customer will make a high-value purchase (greater than ₹10,000) during the Black Friday sale using customer demographic data and product interactions. It's a classification project built using Python, pandas, scikit-learn, and visualized with Matplotlib and Seaborn.
 
-###  Objective:
-To predict whether a customer will make a high-value purchase (above ₹10,000) during the Black Friday sale.
+###  Dataset Summary
+The dataset contains transaction-level purchase data including:
 
+- User_ID, Product_ID
+- Gender, Age, Occupation
+- City_Category, Stay_In_Current_City_Years
+- Marital_Status
+- Product_Category_1, 2, 3
+- Purchase (target column)
 
+### Problem Statement
+The goal is to classify whether a purchase is high-value (Purchase > 10,000) or not. This is framed as a binary classification task.
 
-###  Dataset Overview:
-This dataset includes customer demographic data, product categories, and purchase amounts.
+###  Methodology
+## Data Preprocessing:
+Handling missing values
 
+Encoding categorical variables (Gender, City_Category, etc.)
 
+Mapping age ranges to numerical values
 
-###  Data Preprocessing:
-- Handling missing values
-- Encoding categorical columns
-- Mapping age groups to numeric values
+Converting the target column into binary
 
+### Model
+- RandomForestClassifier from scikit-learn
+- Train-test split with evaluation metrics:
+- Confusion Matrix
+- Classification Report
+- Accuracy Score
 
-###  Exploratory Data Analysis:
-Includes bar plots, pie charts, and line plots to visualize purchase trends.
+### Visualizations
+ - Bar plot of purchases by age
+- Pie chart of gender-based purchases
+- Line plot of product category purchases
+- Confusion matrix heatmap
 
+### Results
+The model demonstrates a good ability to classify high-value purchasers, which can help businesses in:
 
-###  Model Building:
-Using Random Forest Classifier to train a binary classification model.
+- Customer targeting
+- Personalized marketing
+- Sales forecasting
 
-
-### Model Evaluation:
-Confusion matrix and classification report are used to evaluate model performance.
