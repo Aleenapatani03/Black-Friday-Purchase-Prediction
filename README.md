@@ -18,13 +18,13 @@ The goal is to classify whether a purchase is high-value (Purchase > 10,000) or 
 
 ###  Methodology
 ## Data Preprocessing:
-Handling missing values
+- Handling missing values
 
-Encoding categorical variables (Gender, City_Category, etc.)
+- Encoding categorical variables (Gender, City_Category, etc.)
 
-Mapping age ranges to numerical values
+- Mapping age ranges to numerical values
 
-Converting the target column into binary
+- Converting the target column into binary
 
 ### Model
 - RandomForestClassifier from scikit-learn
